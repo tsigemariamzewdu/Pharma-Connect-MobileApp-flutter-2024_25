@@ -46,7 +46,6 @@ class ApiClient {
       ),
     );
 
-    // Add interceptors for logging and error handling
     dio.interceptors.add(LogInterceptor(
       requestBody: true,
       responseBody: true,
