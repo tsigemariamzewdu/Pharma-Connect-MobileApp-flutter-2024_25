@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pharma_connect_flutter/infrastructure/repositories/application_repository_impl.dart';
-import 'package:pharma_connect_flutter/infrastructure/datasources/remote/application_api.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pharma_connect_flutter/application/notifiers/application_notifier.dart';
 
