@@ -1,4 +1,3 @@
-
 const express = require('express')
 const cors = require('cors')
 require('dotenv').config()
@@ -9,13 +8,17 @@ const app = express()
 const cookieParser = require("cookie-parser");
 
 // Middlewares
-app.use(cors(
-    {
-        origin: 'https://pharma-connect-frontend.onrender.com', 
-        credentials:true,
-        exposedHeaders: ["Authorization"], 
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || origin.startsWith('http://localhost')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
     }
-));
+  },
+  credentials: true,
+  exposedHeaders: ["Authorization"],
+}));
 
 app.use(cookieParser());
 app.use(express.json());

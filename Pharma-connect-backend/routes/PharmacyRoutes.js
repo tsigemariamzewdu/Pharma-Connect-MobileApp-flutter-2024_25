@@ -9,7 +9,7 @@ const pharmacyController = require("../controller/PharmacyController");
 // router.post("/",validateRequest(pharmacyValidationSchema),pharmacyController.addPharmacyController);
 
 // get pharmacy detail/profile  (everybody)
-router.get("/:id", pharmacyController.getPharmacyController);
+
 
 // update pharmacy profile (pharmacist)
 router.patch("/:id", pharmacyController.updatePharmacyController);
@@ -29,7 +29,7 @@ router.patch("/:id/pharmacists/:pharmacistId", pharmacyController.removePharmaci
 
 /**manage inventory routes */
 
-// add medicine to inventory (pharmacist)
+// add medicine to inventory (owner/pharmacist)
 router.post('/:pharmacyId/inventory', pharmacyController.addInventoryItem);
 
 // get inventory of a pharmacy/list of medicines&quantiies+price (phramacist & pharmacy profile)

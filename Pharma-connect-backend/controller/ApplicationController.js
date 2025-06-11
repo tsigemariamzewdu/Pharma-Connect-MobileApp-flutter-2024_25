@@ -5,6 +5,7 @@ const asyncErrorHandler = require('../utils/asyncErrorHandler')
 // apply
 exports.createApplicationController = asyncErrorHandler(async (req, res) => {
   const applicationData = req.body;  
+      console.log("🚀 ~ exports.createApplicationController=asyncErrorHandler ~ applicationData:", applicationData)
       const createdApplication = await ApplicationService.createApplication(
         applicationData
       );

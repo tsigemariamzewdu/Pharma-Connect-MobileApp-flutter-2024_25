@@ -115,6 +115,7 @@ exports.getInventory = async (pharmacyId) => {
 exports.addInventoryItem =  async (pharmacyId,medicineData) => {
   const inventoryData= {... medicineData,medicine:medicineData.medicineId, pharmacy:pharmacyId};
 
+  console.log("🚀 ~ exports.addInventoryItem= ~ inventoryData:", inventoryData)
   const pharmacy = await Pharmacy.findById(pharmacyId);
 
   if (!pharmacy) {

@@ -91,7 +91,9 @@ exports.getInventory = asyncErrorHandler(async (req, res) => {
 // add medicine to inventory  
 exports.addInventoryItem = asyncErrorHandler(async (req, res) => {
   const {pharmacyId} = req.params;
+  console.log("🚀 ~ exports.addInventoryItem=asyncErrorHandler ~ pharmacyId:", pharmacyId)
   const medicineData = req.body;
+  console.log("🚀 ~ exports.addInventoryItem=asyncErrorHandler ~ medicineData:", medicineData)
   const inventory = await pharmacyService.addInventoryItem(pharmacyId, medicineData);
   res.status(201).json({
     success: true,
