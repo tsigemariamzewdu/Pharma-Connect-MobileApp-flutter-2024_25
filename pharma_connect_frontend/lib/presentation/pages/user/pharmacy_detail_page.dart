@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pharma_connect_flutter/domain/entities/pharmacy/pharmacy.dart';
 import 'package:pharma_connect_flutter/application/notifiers/pharmacy_notifier.dart';
 import 'package:collection/collection.dart';
 
