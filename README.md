@@ -23,8 +23,7 @@ The app connects pharmacies with users, allowing pharmacists to manage their inv
 ## Features  
 
 ### User Features  
--  **Search Medicines:** Search for medicines by name and find pharmacies that stock them.  
--  **Find Nearby Pharmacies:** Enable location services to filter results by proximity.  
+-  **Search Medicines:** Search for medicines by name and find pharmacies that stock them.    
 -  **Compare Prices:** View medicine prices from multiple pharmacies.  
 -  **Save to Wishlist:** Add medicines to a wishlist for future reference.  
 
