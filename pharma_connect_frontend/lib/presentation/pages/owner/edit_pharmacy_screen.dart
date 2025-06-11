@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pharma_connect_flutter/domain/entities/pharmacy/pharmacy.dart';
 import 'package:pharma_connect_flutter/application/notifiers/pharmacy_notifier.dart';
-import 'package:pharma_connect_flutter/infrastructure/datasources/local/session_manager.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class EditPharmacyScreen extends ConsumerStatefulWidget {
   final Pharmacy pharmacy;
@@ -74,19 +72,6 @@ class _EditPharmacyScreenState extends ConsumerState<EditPharmacyScreen> {
       _error = null;
     });
     try {
-      final data = {
-        'name': _nameController.text,
-        'ownerName': _ownerNameController.text,
-        'licenseNumber': _licenseNumberController.text,
-        'email': _emailController.text,
-        'contactNumber': _contactNumberController.text,
-        'address': _addressController.text,
-        'city': _cityController.text,
-        'state': _stateController.text,
-        'zipCode': _zipCodeController.text,
-        'latitude': double.tryParse(_latitudeController.text) ?? 0.0,
-        'longitude': double.tryParse(_longitudeController.text) ?? 0.0,
-      };
       final notifier = ref.read(pharmacyProvider.notifier);
       await notifier.updatePharmacy(
           widget.pharmacy.id,

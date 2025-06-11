@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pharma_connect_flutter/domain/entities/inventory/inventory_item.dart';
-import 'package:pharma_connect_flutter/domain/repositories/inventory_repository.dart';
 import 'package:pharma_connect_flutter/infrastructure/datasources/local/session_manager.dart';
-import 'package:pharma_connect_flutter/infrastructure/datasources/remote/inventory_api.dart';
-import 'package:pharma_connect_flutter/infrastructure/repositories/inventory_repository_impl.dart';
-import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'package:pharma_connect_flutter/presentation/pages/owner/edit_inventory_item_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
