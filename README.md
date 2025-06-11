@@ -1,5 +1,5 @@
 # Pharma-Connect-MobileApp-flutter-2024_25
-# PharmaConnect Mobile App  
+
 
 ##  Project Description  
 **PharmaConnect** is a mobile application designed to help users **search for medicines, compare prices, and locate nearby pharmacies**.  
