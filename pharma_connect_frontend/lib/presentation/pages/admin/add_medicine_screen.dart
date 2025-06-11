@@ -3,8 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pharma_connect_flutter/application/notifiers/medicine_notifier.dart';
 import 'package:pharma_connect_flutter/domain/entities/medicine/medicine.dart';
 import 'package:pharma_connect_flutter/presentation/widgets/loading_indicator.dart';
-import 'package:pharma_connect_flutter/presentation/widgets/error_dialog.dart';
-
+ 
 class AddMedicineScreen extends ConsumerWidget {
   const AddMedicineScreen({Key? key}) : super(key: key);
 
