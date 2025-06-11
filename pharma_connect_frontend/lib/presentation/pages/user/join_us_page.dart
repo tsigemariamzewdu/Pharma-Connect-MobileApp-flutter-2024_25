@@ -3,11 +3,9 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pharma_connect_flutter/infrastructure/datasources/local/session_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:pharma_connect_flutter/infrastructure/datasources/api_client.dart';
 
 final dioProvider = Provider<Dio>((ref) {
-  // You should have a central Dio provider in your app. Adjust as needed.
-  return Dio(BaseOptions(baseUrl: 'http://10.4.113.71:5000/api/v1'));
+   return Dio(BaseOptions(baseUrl: 'http://10.4.113.71:5000/api/v1'));
 });
 
 class JoinUsPage extends ConsumerStatefulWidget {
