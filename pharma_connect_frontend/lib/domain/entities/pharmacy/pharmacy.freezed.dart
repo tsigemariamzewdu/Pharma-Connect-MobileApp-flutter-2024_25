@@ -5,9 +5,6 @@
 
 part of 'pharmacy.dart';
 
-// **************************************************************************
-// FreezedGenerator
-// **************************************************************************
 
 T _$identity<T>(T value) => value;
 
@@ -49,8 +46,7 @@ mixin _$Pharmacy {
   /// Serializes this Pharmacy to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of Pharmacy
-  /// with the given fields replaced by the non-null parameter values.
+  
   @JsonKey(includeFromJson: false, includeToJson: false)
   $PharmacyCopyWith<Pharmacy> get copyWith =>
       throw _privateConstructorUsedError;

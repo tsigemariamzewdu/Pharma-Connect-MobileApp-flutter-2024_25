@@ -1,10 +1,7 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+
 
 part of 'inventory_item.dart';
 
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 _$InventoryItemImpl _$$InventoryItemImplFromJson(Map<String, dynamic> json) =>
     _$InventoryItemImpl(
